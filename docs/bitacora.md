@@ -65,6 +65,19 @@ El nombre automático del servidor se sustituyó por `DC01-AMINE`, elegido para 
 
 ✅ El nuevo nombre aparece en el Administrador del servidor después del reinicio.
 
+## 28 de agosto de 2026 - Diseño inicial de red
+
+### Configuración observada
+
+- Adaptador actual conectado mediante NAT de VirtualBox.
+- Dirección IPv4 recibida por DHCP: `10.0.2.15`.
+- Máscara de subred: `255.255.255.0` (`/24`).
+- Puerta de enlace NAT: `10.0.2.2`.
+
+### Decisión de diseño
+
+El adaptador NAT se conservará para proporcionar acceso a Internet. Se añadirá un segundo adaptador conectado a una red interna llamada `LAB-AD`. Ese adaptador se utilizará para la comunicación entre el controlador de dominio y los futuros clientes, y recibirá una dirección IP estática.
+
 ### Próxima acción
 
-Revisar la configuración IPv4 recibida por DHCP y planificar una dirección IP estática antes de instalar Active Directory Domain Services.
+Añadir el segundo adaptador de red interna en VirtualBox.
