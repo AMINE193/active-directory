@@ -78,6 +78,20 @@ El nombre automático del servidor se sustituyó por `DC01-AMINE`, elegido para 
 
 El adaptador NAT se conservará para proporcionar acceso a Internet. Se añadirá un segundo adaptador conectado a una red interna llamada `LAB-AD`. Ese adaptador se utilizará para la comunicación entre el controlador de dominio y los futuros clientes, y recibirá una dirección IP estática.
 
+## 28 de agosto de 2026 - Incorporación de la red interna
+
+### Evidencia observada
+
+- Windows Server detecta dos adaptadores Ethernet.
+- El primer adaptador conserva la dirección NAT `10.0.2.15/24` y la puerta de enlace `10.0.2.2`.
+- El segundo adaptador está conectado a `LAB-AD`.
+- El segundo adaptador recibe temporalmente una dirección APIPA `169.254.210.177/16`, comportamiento esperado al no existir todavía DHCP en la red interna.
+- El adaptador interno no tiene puerta de enlace.
+
+### Resultado
+
+✅ La red interna está conectada y lista para recibir una configuración IPv4 estática.
+
 ### Próxima acción
 
-Añadir el segundo adaptador de red interna en VirtualBox.
+Renombrar los adaptadores como `INTERNET-NAT` y `LAN-AD` para identificarlos con claridad.
