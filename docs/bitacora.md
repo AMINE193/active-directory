@@ -55,6 +55,16 @@ El equipo anfitrión dispone de 32 GB de RAM. Se decidió mantener temporalmente
 - Memoria de la máquina virtual: 2 GB.
 - Disco virtual disponible: aproximadamente 49 GB.
 
+## 28 de agosto de 2026 - Cambio de nombre
+
+### Acción realizada
+
+El nombre automático del servidor se sustituyó por `DC01-AMINE`, elegido para identificar el primer controlador de dominio del laboratorio.
+
+### Resultado
+
+✅ El nuevo nombre aparece en el Administrador del servidor después del reinicio.
+
 ### Próxima acción
 
-Cambiar el nombre del servidor a `DC01` antes de configurar una dirección IP estática e instalar Active Directory Domain Services.
+Revisar la configuración IPv4 recibida por DHCP y planificar una dirección IP estática antes de instalar Active Directory Domain Services.
