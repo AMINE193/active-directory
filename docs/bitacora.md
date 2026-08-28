@@ -41,3 +41,20 @@ El equipo anfitrión dispone de 32 GB de RAM. Se decidió mantener temporalmente
 
 - Las credenciales no se registran en el repositorio.
 - El consumo de memoria y la fluidez se revisarán durante la instalación de los roles.
+
+## 28 de agosto de 2026 - Revisión de configuración inicial
+
+### Configuración observada
+
+- Nombre automático del equipo: `WIN-NIB11NB3RP4`.
+- Pertenencia actual: grupo de trabajo `WORKGROUP`.
+- Red Ethernet: dirección IPv4 asignada mediante DHCP; IPv6 habilitado.
+- Firewall de Microsoft Defender: activado para el perfil privado.
+- Escritorio remoto: deshabilitado.
+- Sistema: Windows Server 2022 Standard Evaluation.
+- Memoria de la máquina virtual: 2 GB.
+- Disco virtual disponible: aproximadamente 49 GB.
+
+### Próxima acción
+
+Cambiar el nombre del servidor a `DC01` antes de configurar una dirección IP estática e instalar Active Directory Domain Services.
