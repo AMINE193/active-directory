@@ -33,7 +33,11 @@ Preparar la primera máquina virtual que se utilizará como servidor del laborat
 
 **Resultado:** Se pudo iniciar sesión en Windows Server correctamente.
 
+### Decisión de recursos
+
+El equipo anfitrión dispone de 32 GB de RAM. Se decidió mantener temporalmente 2048 MB en la máquina virtual para comprobar su funcionamiento. Si el Administrador del servidor o los futuros roles responden con lentitud, se aumentará la memoria a 4096 o 6144 MB.
+
 ### Observaciones
 
 - Las credenciales no se registran en el repositorio.
-- Antes de instalar roles se revisarán los recursos asignados a la máquina virtual. Si el equipo anfitrión lo permite, se valorará aumentar la memoria a 4096 MB para trabajar con mayor fluidez.
+- El consumo de memoria y la fluidez se revisarán durante la instalación de los roles.
